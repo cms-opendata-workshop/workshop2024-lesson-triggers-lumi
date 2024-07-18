@@ -1,8 +1,7 @@
 ---
 title: "CMS Trigger System"
-teaching: 10
+teaching: 20
 exercises: 0
-questions:
 ---
 
 :::::::::::::: questions

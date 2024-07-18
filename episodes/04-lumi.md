@@ -1,6 +1,6 @@
 ---
-Title: "Luminosity"
-teaching: 10
+title: "Luminosity"
+teaching: 15
 exercises: 0
 ---
 

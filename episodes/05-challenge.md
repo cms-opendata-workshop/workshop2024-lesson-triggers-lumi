@@ -294,8 +294,8 @@ The total prescale value is the product of any prescale applied at L1 with any p
 
 :::::::::::::::::::: keypoints
 
-- 
--
--
+- Triggers need to be chosen with the event topology of the analysis in mind! They place constraints on your choices for selecting physics objects in an analysis.
+- The brilcalc tools allows you to calculate luminosity for a run, a range of runs, or a trigger path.
+- The brilcalc tool can also share information about trigger prescales throughout a run.
 
 :::::::::::::::::::::

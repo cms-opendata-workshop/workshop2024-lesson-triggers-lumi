@@ -1,5 +1,5 @@
 ---
-Title: "Triggers in NanoAOD"
+title: "Triggers in NanoAOD"
 teaching: 15
 exercises: 0
 ---
