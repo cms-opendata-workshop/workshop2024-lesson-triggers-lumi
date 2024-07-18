@@ -6,109 +6,64 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- What did we learn in the physics objects pre-learning module?
+- How should I select events for a physics analysis?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Summarize information available for various physics objects.
+- Describe the fundamental elements of event selection in CMS.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## What we've learned so far...
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.txt) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+The **CMS experment** is a giant detector that acts like a camera that "photographs" particle collisions, allowing us to interpret their nature. In the [Physics Objects pre-learning exercise](https://cms-opendata-workshop.github.io/workshop2024-lesson-physics-objects/), you read about the following physics objects reconstructed by CMS:
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+* muons
+* electrons
+* photons
+* taus
+* jets
+* missing transverse momentum
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+Many properties of these objects and more can be accessed in the CMS NanoAOD files!
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+## Event Selection principles
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+When beginning a CMS analysis, there are three guiding principles to consider. Let's assume you have a Feynman diagram in your head representing some physics process that you would like to measure or search for.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::: testimonial
 
-::::::::::::::::::::::::::::::::::::: challenge 
+## Guiding principles
 
-## Challenge 1: Can you do it?
+1. What physics objects should be present to represent the final state particles of my Feynman diagram? Should any of the objects be related to each other in a special way?
+2. What physics objects should NOT be present?
+3. What will cue CMS to store the types of events I want to analyze?
 
-What is the output of this command?
+::::::::::::::::::
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+### Choosing things to keep
 
-:::::::::::::::::::::::: solution 
+No physics object in CMS is reconstructed with absolute certainty. We always need to consider whether a reconstructed object is "genunine" or "fake", and the pre-computed identification algorithms are designed to help analysts avoid considering "fake" objects that were caused by spurious information such as detector noise. 
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+Other considerations are whether objects are "prompt" or "nonprompt" (or "displaced"): muons from a Higgs boson 4-muon decay would be considered "prompt"; muons emerging from b-hadron decays within a jet would be considered "nonprompt"; and muons emerging far from the interaction point from the decay of some long-lived particle would be considered "displaced". Identification and isolation algorithms can piece these differences apart, but each analysis will apply different choices. 
 
-:::::::::::::::::::::::::::::::::
+Jets carry information about the quark or boson that produced them, which is described as "tagging" in CMS. Analysts can choose to implement a jet tagging algorithm to select out jets with certain features. 
 
+### Choosing things to drop
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+All measurements and searches must consider background processes: reducible backgrounds with different final states that may pass event selection criteria due to some mismeasurement or fluctuation, and irreducible backgrounds with the same final state physics objects. Clever selection choices can often drop the rate of background processes significantly without sacrificing too many signal events. One basic example is the practice of using high momentum thresholds in searches for massive new physics particles, since SM processes with the same final state will preferentially result in low-momentum physics objects. Any physics object that can be *selected* can also be *vetoed*, depending on the needs of the analysis. An important part of this process is identifying and studying SM background processes!
 
-:::::::::::::::::::::::: solution 
+### Choosing a set of triggers
 
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
+Triggers determine which collision events are kept or discarded by CMS, so it sounds like this criterion should be chosen first, but in practice it is typically chosen last. Armed with a set of physics object selection criteria, we can search for a "trigger" or set of triggers that should have passed any event that will also pass the analysis criteria. More on this next!
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- NanoAOD files contain the important kinematics, identification, isolation, and tagging information typically needed for analysis event selection.
+- Event selection criteria must be a reasoned balance of physics objects to keep, physics objects to reject, and trigger options from CMS.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/

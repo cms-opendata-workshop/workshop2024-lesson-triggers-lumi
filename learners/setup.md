@@ -2,53 +2,15 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+:::::::::::: prereq
 
-## Data Sets
+For this lesson you will need a new container for the `brilcalc` tool to calculate luminosities and some trigger information. **Please install the brilcalc container**:
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+```bash
+docker run -it --name brilws gitlab-registry.cern.ch/cms-cloud/brilws-docker
+```
 
-## Software Setup
+If you are working with apptainer on a remote cluster, you can try the [conda installation instructions](https://opendata.cern.ch/docs/cms-guide-luminosity-calculation) for brilcalc.
+(Note: if you are a young student working on a remote cluster, feel free to just follow along -- this is a tool that is important for research-level open data use, but not for educational use.)
 
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
-
+::::::::::::
