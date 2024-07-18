@@ -41,6 +41,7 @@ processes with well-known cross sections. Luminosity is the ratio of the product
 "cross section" for the considered process:
 
 $\mathcal{L}(t) = R(t)/\sigma,$
+
 $\mathcal{L}_{\mathrm{int.}} = N/\sigma.$
 
 Cross section is measured in "barns", a unit of area relevant for nuclear-scale processes. The most literal meaning of the word cross section
@@ -62,7 +63,7 @@ CMS has several subdetectors that serve as "luminometers":
  * BCM1F: the fast beam conditions monitor, a system of diamond sensors on the PLT apparatus.
 
 
-![]{fig/luminometers.PNG}
+![](fig/luminometers.PNG)
 
 The pixel detector contributes two measurements that are used for luminosity calculations: the number of charge clusters observed, and the number
 of vertices found with more than 10 tracks. The number of clusters can be used to compute the cross section for producing "visible particles".
@@ -79,7 +80,9 @@ hits. The data from all of these luminometers can be used to converge on a preci
 
 The true mean number of interations per LHC bunch crossing, $\mu$, is proportional to the instantaneous luminosity of the bunch crossing:
 
-$\mu = \sigma \mathcal{L}_b / v_r$, where $v_r = 11 245.6$ Hz is the revolution frequency of the LHC, and $\sigma$ is the total interaction cross section.
+$\mu = \sigma \mathcal{L}_b / v_r$,
+
+where $v_r = 11 245.6$ Hz is the revolution frequency of the LHC, and $\sigma$ is the total interaction cross section.
 
 In the pixel detector, $\mathcal{L}_b$ can be estimated from this formula by considering the average number of clusters and the visible cross section
 obtained by comparing the number of clusters to number of interactions. This algorithm is known as "rate scaling":
@@ -89,7 +92,7 @@ $\mathcal{L}_b = N_{\mathrm{av}} v_r / \sigma_{\mathrm{vis}}.$
 For the HF, PLT, and BCM1F luminometers, the "zero counting" method gives a better luminosity estimate, since these detectors are more likely than the
 pixel detectors to have multiple signals overlap and be counted as one observation. The number of interactions per bunch crossing is governed by the
 Poisson distribution, so if there is a probability $p$ for an interaction result in 0 observations in a luminometer and $k$ interactions in a given
-bunch crossing, the expected fraction of "empty" events ($\langle f_0 \rangle$) can be written as the sum of the Poisson distribution times the total
+bunch crossing, the expected fraction of "empty" events, $\langle f_0 \rangle$, can be written as the sum of the Poisson distribution times the total
 probability for all possible values of $k$:
 
 $\langle f_0 \rangle = \sum_{k = 0}^{\infty}{\frac{e^{-\mu} \mu^k}{k!} p^k} = e^{-\mu(1-p)}$.
