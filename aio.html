@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: All in One View</title>
+<title>Triggers &amp; Luminosity: All in One View</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="assets/styles.css">
 <script src="assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -94,7 +94,7 @@
       <img class="small-logo" alt="CMS DPOA small logo" src="assets/images/dpoa-logo-sm.png">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Triggers &amp; Luminosity
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -105,7 +105,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Triggers &amp; Luminosity
           </span>
         </li>
         <li class="nav-item">
@@ -121,9 +121,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="reference.html">Reference</a></li>
-          </ul>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
 </li>
       </ul>
 </div>
@@ -141,7 +139,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Lesson Title
+  Triggers &amp; Luminosity
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -243,7 +241,55 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using Markdown</a>
+        <a href="introduction.html">1. Introduction</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="02-triggerintro.html">2. CMS Trigger System</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03-nanotrigs.html">3. Triggers in NanoAOD</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="04-lumi.html">4. Luminosity</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05-challenge.html">5. Trigger &amp; Lumi challenge</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -276,7 +322,7 @@
                       <li>
                         <a href="profiles.html">Learner Profiles</a>
                       </li>
-                      <li><a href="reference.html">Reference</a></li>
+
                     </ul>
 </div>
                 </div>
@@ -306,9 +352,9 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Using Markdown</a></p>
+<section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2024-06-19 |
+<p>Last updated on 2024-07-18 |
 
         <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -322,8 +368,8 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>What did we learn in the physics objects pre-learning module?</li>
+<li>How should I select events for a physics analysis?</li>
 </ul>
 </div>
 </div>
@@ -333,81 +379,1147 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Summarize information available for various physics objects.</li>
+<li>Describe the fundamental elements of event selection in CMS.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<section><h2 class="section-heading" id="what-weve-learned-so-far">What we’ve learned so far…<a class="anchor" aria-label="anchor" href="#what-weve-learned-so-far"></a>
+<a class="anchor" aria-label="anchor" href="#what-weve-learned-so-far"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
+<p>The <strong>CMS experment</strong> is a giant detector that acts like
+a camera that “photographs” particle collisions, allowing us to
+interpret their nature. In the <a href="https://cms-opendata-workshop.github.io/workshop2024-lesson-physics-objects/" class="external-link">Physics
+Objects pre-learning exercise</a>, you read about the following physics
+objects reconstructed by CMS:</p>
+<ul>
+<li>muons</li>
+<li>electrons</li>
+<li>photons</li>
+<li>taus</li>
+<li>jets</li>
+<li>missing transverse momentum</li>
+</ul>
+<p>Many properties of these objects and more can be accessed in the CMS
+NanoAOD files!</p>
+</section><section><h2 class="section-heading" id="event-selection-principles">Event Selection principles<a class="anchor" aria-label="anchor" href="#event-selection-principles"></a>
+<a class="anchor" aria-label="anchor" href="#event-selection-principles"></a>
+</h2>
+<hr class="half-width">
+<p>When beginning a CMS analysis, there are three guiding principles to
+consider. Let’s assume you have a Feynman diagram in your head
+representing some physics process that you would like to measure or
+search for.</p>
+<div id="guiding-principles" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="guiding-principles" class="callout-inner">
+<h3 class="callout-title">Guiding principles<a class="anchor" aria-label="anchor" href="#guiding-principles"></a>
+</h3>
+<div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
+<li>What physics objects should be present to represent the final state
+particles of my Feynman diagram? Should any of the objects be related to
+each other in a special way?</li>
+<li>What physics objects should NOT be present?</li>
+<li>What will cue CMS to store the types of events I want to
+analyze?</li>
 </ol>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="choosing-things-to-keep">Choosing things to keep<a class="anchor" aria-label="anchor" href="#choosing-things-to-keep"></a>
+</h3>
+<p>No physics object in CMS is reconstructed with absolute certainty. We
+always need to consider whether a reconstructed object is “genunine” or
+“fake”, and the pre-computed identification algorithms are designed to
+help analysts avoid considering “fake” objects that were caused by
+spurious information such as detector noise.</p>
+<p>Other considerations are whether objects are “prompt” or “nonprompt”
+(or “displaced”): muons from a Higgs boson 4-muon decay would be
+considered “prompt”; muons emerging from b-hadron decays within a jet
+would be considered “nonprompt”; and muons emerging far from the
+interaction point from the decay of some long-lived particle would be
+considered “displaced”. Identification and isolation algorithms can
+piece these differences apart, but each analysis will apply different
+choices.</p>
+<p>Jets carry information about the quark or boson that produced them,
+which is described as “tagging” in CMS. Analysts can choose to implement
+a jet tagging algorithm to select out jets with certain features.</p>
+</div>
+<div class="section level3">
+<h3 id="choosing-things-to-drop">Choosing things to drop<a class="anchor" aria-label="anchor" href="#choosing-things-to-drop"></a>
+</h3>
+<p>All measurements and searches must consider background processes:
+reducible backgrounds with different final states that may pass event
+selection criteria due to some mismeasurement or fluctuation, and
+irreducible backgrounds with the same final state physics objects.
+Clever selection choices can often drop the rate of background processes
+significantly without sacrificing too many signal events. One basic
+example is the practice of using high momentum thresholds in searches
+for massive new physics particles, since SM processes with the same
+final state will preferentially result in low-momentum physics objects.
+Any physics object that can be <em>selected</em> can also be
+<em>vetoed</em>, depending on the needs of the analysis. An important
+part of this process is identifying and studying SM background
+processes!</p>
+</div>
+<div class="section level3">
+<h3 id="choosing-a-set-of-triggers">Choosing a set of triggers<a class="anchor" aria-label="anchor" href="#choosing-a-set-of-triggers"></a>
+</h3>
+<p>Triggers determine which collision events are kept or discarded by
+CMS, so it sounds like this criterion should be chosen first, but in
+practice it is typically chosen last. Armed with a set of physics object
+selection criteria, we can search for a “trigger” or set of triggers
+that should have passed any event that will also pass the analysis
+criteria. More on this next!</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>NanoAOD files contain the important kinematics, identification,
+isolation, and tagging information typically needed for analysis event
+selection.</li>
+<li>Event selection criteria must be a reasoned balance of physics
+objects to keep, physics objects to reject, and trigger options from
+CMS.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</div>
+</section></section><section id="aio-02-triggerintro"><p>Content from <a href="02-triggerintro.html">CMS Trigger System</a></p>
+<hr>
+<p>Last updated on 2024-07-18 |
+
+        <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/02-triggerintro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is the CMS trigger system and why is it needed?</li>
+<li>What is a trigger path in CMS?</li>
+<li>How does the trigger depend on instantaneous luminosity and why are
+prescales necessary?</li>
+<li>What do streams and datasets have to do with triggers?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Learn about the CMS trigger system.</li>
+<li>Understand the basic concept of trigger paths.</li>
+<li>Understand the necessity of prescaling.</li>
+<li>Learn how the trigger system allows for the organization of CMSSW
+data in streams and datasets.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="the-cms-acquisition-and-trigger-systems">The CMS acquisition and trigger systems<a class="anchor" aria-label="anchor" href="#the-cms-acquisition-and-trigger-systems"></a>
+<a class="anchor" aria-label="anchor" href="#the-cms-acquisition-and-trigger-systems"></a>
+</h2>
+<hr class="half-width">
+<p>Collisions at the LHC happen at a <strong>rate</strong> close to 40
+million per second (40 MHz). Once each collision is <em>sensed</em> by
+the different subdetectors, the amount of information they generate
+corresponds to about what you can fit in a 1 MB file. If we were to
+record every single collision, it is said (you can do the math) that one
+can probably fill out all the available disk space in the world in a few
+days!</p>
+<p>Not all collisions that happen at the LHC are interesting. We would
+like to keep the interesting ones and, most importantly, do not miss the
+<strong>discovery-quality</strong> ones. In order to achieve that we
+need a <em>Trigger</em>.</p>
+<p>Before we jump into the details for the trigger system, let’s agree
+on some terminology:</p>
+<ul>
+<li><p><strong>Fill</strong>: Every time the LHC injects beams in the
+machine it marks the beginning of what is known as a
+<em>Fill</em>.</p></li>
+<li><p><strong>Run</strong>: As collisions happen in the LHC, CMS (and
+the other detectors) decide whether they start <em>recording</em> data.
+Every time the <em>start</em> button is pushed, a new <em>Run</em>
+starts and it is given a unique number.</p></li>
+<li><p><strong>Lumi section</strong>: while colliding, the LHC’s
+delivered instantaneous luminosity gets degraded (although during Run 3
+it will be mainly <em>levelled</em>) due to different reasons. I.e., it
+is not constant over time. For practical reasons, CMS groups the events
+it collects in <em>luminosity sections</em>, where the luminosity values
+can be considered constant.</p></li>
+</ul></section><section><h2 class="section-heading" id="the-trigger-system">The trigger system<a class="anchor" aria-label="anchor" href="#the-trigger-system"></a>
+<a class="anchor" aria-label="anchor" href="#the-trigger-system"></a>
+</h2>
+<hr class="half-width">
+<p>Deciding on which events to record is the main purpose of the trigger
+system. It is like determining which events to record by taking a
+<strong>quick picture</strong> of it and, even though a bit blurry,
+decide whether it is interesting to keep or not for a future, more
+thorough inspection.</p>
+<p>CMS does this in two main steps. The first one, the <strong>Level 1
+trigger</strong> (L1), implemented in hardware (fast FPGAs), reduces the
+input rate of 40 Mhz to around 100 KHz. The other step is the
+<strong>High Level Trigger</strong> (HLT), run on commercial machines
+with good-old C++ and Python, where the input rate is leveled around the
+maximum available budget of around 2 KHz.</p>
+<figure><img src="fig/triggeroverview.png" style="width:60.0%" class="figure mx-auto d-block"></figure><p>There are hundreds of different triggers in CMS. Each one of them is
+designed to pick certain types of events, with different intensities and
+topologies. For instance the <a href="https://opendata.cern.ch/record/23438" class="external-link">HLT_Mu20</a> trigger, will
+select events with at least one muon with <em>20 GeV</em> of transverse
+momentum.</p>
+<p>At the HLT level, which takes L1 as input, triggers are
+<strong>implemented using the primary CMS software, CMSSW,</strong>
+using pieces of it (“modules”) that can be arranged to achieve the
+desired result: selecting specific kinds of events. Computationally,
+triggers are CMSSW “Paths”, and one could extract a lot of information
+by exploring the Python configuration of these paths. Within CMS, data
+is processed using C++ source code configured using Python. An example
+of a trigger path in a python configuration file might look like
+this:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>process.HLT_Mu20_v2 <span class="op">=</span> cms.Path( process.HLTBeginSequence <span class="op">+</span> process.hltL1sL1SingleMu16 <span class="op">+</span> process.hltPreMu20 <span class="op">+</span> process.hltL1fL1sMu16L1Filtered0 <span class="op">+</span> process.HLTL2muonrecoSequence <span class="op">+</span> process.hltL2fL1sMu16L1f0L2Filtered10Q <span class="op">+</span> process.HLTL3muonrecoSequence <span class="op">+</span> process.hltL3fL1sMu16L1f0L2f10QL3Filtered20Q <span class="op">+</span> process.HLTEndSequence )</span></code></pre>
+</div>
+<figure><img src="fig/triggerpath.png" class="figure mx-auto d-block"></figure><p>Triggers are code, and those pieces of code are constantly changing.
+Modifications to a trigger could imply a different version identifier.
+For instance, our <code>HLT_Mu20</code> could actually be
+<code>HLT_Mu15_v1</code> or <code>HLT_Mu15_v2</code>, etc., depending on
+the version. Therefore, it is completely normal that the trigger names
+can <strong>change from run to run</strong>.</p>
+</section><section><h2 class="section-heading" id="prescales">Prescales<a class="anchor" aria-label="anchor" href="#prescales"></a>
+<a class="anchor" aria-label="anchor" href="#prescales"></a>
+</h2>
+<hr class="half-width">
+<p>The need for prescales (and its meaning) is evident if one thinks of
+different physics processes having different cross sections. It is a lot
+more likely to record one minimum bias event, than an event where a Z
+boson is produced. Even less likely is to record an event with a Higgs
+boson. We could have triggers named, say,
+<code>HLT_ZBosonRecorder</code> for the one in charge of filtering
+Z-carrying events, or <code>HLT_HiggsBosonRecorder</code> for the one
+accepting Higgses (the actual names are more sophisticated and complex
+than that, of course.) The <em>prescales are designed to keep these
+inputs under control</em> by, for instance, recording just 1 out of 100
+collisions that produce a likely Z boson, or 1 out of 1 collisions that
+produce a potential Higgs boson. In the former case, the prescale would
+be 100, while for the latter it would be 1; if a trigger has a prescale
+of 1, i.e., records every single event it identifies, we call it
+<strong>unprescaled</strong>.</p>
+<p>Maybe not so evident is the need for trigger prescale changes for
+keeping up with luminosity changes. As the luminosity drops, prescales
+can be relaxed, and therefore <strong>could change from to run</strong>
+in the same fill. A trigger can be prescaled at L1 as well as the HLT
+levels. L1 triggers have their own nomenclature and can be used as HLT
+trigger <strong>seeds</strong>.</p>
+<p>You saw the effect of trigger prescaling in the pre-exercise for
+dataset scouting. When plotting the muon momentum, several peaks and
+valleys appear at the low momentum edge. If the lower-momentum triggers
+were unprescaled, there would be <strong>many</strong> more events in
+the dataset with low pt muons, making a smoothly falling curve.</p>
+<figure><img src="fig/python_pt_plot_cms_2016_singlemuon_nanoaod.png" class="figure mx-auto d-block"></figure></section><section><h2 class="section-heading" id="triggers-streams-and-datasets">Triggers, streams and datasets<a class="anchor" aria-label="anchor" href="#triggers-streams-and-datasets"></a>
+<a class="anchor" aria-label="anchor" href="#triggers-streams-and-datasets"></a>
+</h2>
+<hr class="half-width">
+<p>After events are accepted by possibly more than one type of trigger,
+they are streamed in different categories, called
+<strong>streams</strong> and then classified and arranged in primary
+<strong>datasets</strong>. Most, but not all, of the datasets belonging
+to the stream A, the physics stream, are or will become available as CMS
+Open Data.</p>
+<p>Finally, it is worth mentioning that:</p>
+<ul>
+<li>an event can be triggered by many trigger paths</li>
+<li>trigger paths are unique to each dataset</li>
+<li>
+<strong>the same event can arrive in two different datasets</strong>
+(this is speciall important if working with many datasets as event
+duplication can happen and one has to account for it)</li>
+</ul>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>The CMS trigger system filters uninteresting events, keeping the
+budget high for the flow of interesting data.</li>
+<li>Computationally, a trigger is a CMSSW path, which is composed of
+several software modules.</li>
+<li>Trigger prescales allow the data acquisition to adjust to changes in
+instantaneous luminosity while keeping the rate of incomming data under
+control</li>
+<li>The trigger systems allows for the classification and organization
+of datasets by physics objects of interest.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-03-nanotrigs"><p>Content from <a href="03-nanotrigs.html">Triggers in NanoAOD</a></p>
+<hr>
+<p>Last updated on 2024-07-18 |
+
+        <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/03-nanotrigs.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What information for triggers can I find in NanoAOD?</li>
+<li>What information is not available in NanoAOD?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Identify the L1 and HLT information in NanoAOD</li>
+<li>Learn alternate methods of accessing prescale information</li>
+<li>Access resources to learn about trigger object information in
+MiniAOD files</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="triggers-in-nanoaod">Triggers in NanoAOD<a class="anchor" aria-label="anchor" href="#triggers-in-nanoaod"></a>
+<a class="anchor" aria-label="anchor" href="#triggers-in-nanoaod"></a>
+</h2>
+<hr class="half-width">
+<p>For many physics analyses, one basic piece of trigger information is
+required: did this event pass or fail a certain path? NanoAOD stores
+this information for both L1 and HLT paths. Let’s consider 3 example HLT
+paths:</p>
+<ul>
+<li>HLT_Ele35_WPTight_Gsf</li>
+<li>HLT_IsoMu27</li>
+<li>HLT_IsoMu27_LooseChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1</li>
+</ul>
+<p>The first element of the name indicates that these paths are part of
+the “High Level Trigger” mentioned in the introduction. The second
+element of the name shows the first physics object that was tested for
+this path – the first example is an electron trigger, and the other two
+are muon triggers. Following the short name “Ele” or “Mu” is a
+momentum/energy threshold for this object, measured in GeV. The example
+“HLT_IsoMu27” has another feature in the name: “Iso”. This indicates
+that the muon is required to be isolated. Adding isolation requirements
+helps keep the momentum threshold for this popular trigger low without
+overwhelming the CMS trigger bandwidth.</p>
+<p>The final example shows a trigger with multiple objects – after the
+“IsoMu27” label comes a label related to tau leptons:
+“LooseChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1”. This is a complex
+label that would share with experts many details of how the tau passing
+this trigger appeared in the CMS calorimeters. The most important
+information is that this tau lepton decayed to hadrons (note the “HPS”
+label for “hadron plus strips), was loosely isolated from other charged
+hadrons, passed a 20 GeV threshold, and was found in the central region
+of the detector (<span class="math inline">\(\eta &lt; 2.1\)</span>).
+This trigger might be used for a <span class="math inline">\(H
+\rightarrow \tau \tau\)</span> analysis with one hadronic tau and one
+tau that decayed to a muon.</p>
+<div class="section level3">
+<h3 id="nanoaod-branch-listings">NanoAOD branch listings<a class="anchor" aria-label="anchor" href="#nanoaod-branch-listings"></a>
+</h3>
+<p>Each dataset’s record page contains a link to its variable listing,
+which will show the full list of L1 and HLT paths available in that
+dataset. We will show short examples below.</p>
+<p>Note:</p>
+<ul>
+<li>No version number appears in the branch names! NanoAOD assumes you
+want all versions of a trigger</li>
+<li>All the branches are type “bool”, so they indicate pass (true) or
+fail (false) for the event</li>
+<li>Some L1 paths relate to detector conditions, and some to energy
+thresholds</li>
+<li>Many triggers of the same type exist with a variety of energy or
+momentum thresholds</li>
+</ul>
+<table class="table">
+<caption>L1 information in NanoAOD (truncated example)</caption>
+<colgroup>
+<col width="50%">
+<col width="13%">
+<col width="36%">
+</colgroup>
+<thead><tr class="header">
+<th>Object property</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>L1_AlwaysTrue</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_BPTX_AND_Ref4_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_BPTX_BeamGas_B1_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_BPTX_BeamGas_B2_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_BPTX_BeamGas_Ref1_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_BPTX_BeamGas_Ref2_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_BPTX_NotOR_VME</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_BptxMinus</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_BptxOR</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_BptxPlus</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_BptxXOR</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_CDC_SingleMu_3_er1p2_TOP120_DPHI2p618_3p142</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_DoubleEG8er2p5_HTT260er</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_DoubleEG8er2p5_HTT320er</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_DoubleEG8er2p5_HTT340er</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="even">
+<td>L1_DoubleEG_15_10_er2p5</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+<tr class="odd">
+<td>L1_DoubleEG_20_10_er2p5</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: NANO)</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<caption>HLT information in NanoAOD (truncated example)</caption>
+<colgroup>
+<col width="50%">
+<col width="13%">
+<col width="36%">
+</colgroup>
+<thead><tr class="header">
+<th>Object property</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>HLT_Ele30_WPTight_Gsf</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_Ele30_eta2p1_WPTight_Gsf_CentralPFJet35_EleCleaned</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_Ele32_WPTight_Gsf</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_Ele32_WPTight_Gsf_L1DoubleEG</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_Ele35_WPTight_Gsf</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_Ele35_WPTight_Gsf_L1EGMT</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_Ele38_WPTight_Gsf</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_IsoMu27</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_IsoMu27_LooseChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_IsoMu27_MET90</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_IsoMu27_MediumChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_IsoMu27_TightChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_IsoMu30</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_IsoTrackHB</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_IsoTrackHE</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_Mu48NoFiltersNoVtx_Photon48_CaloIdL</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_Mu4_TrkIsoVVL_DiPFJet90_40_DEta3p5_MJJ750_HTT300_PFMETNoMu60</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="even">
+<td>HLT_Mu50</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+<tr class="odd">
+<td>HLT_Mu50_IsoVVVL_PFHT450</td>
+<td>Bool_t</td>
+<td>Trigger/flag bit (process: HLT)</td>
+</tr>
+</tbody>
+</table>
+<div id="what-is-the-process" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="what-is-the-process" class="callout-inner">
+<h3 class="callout-title">What is the “process”?<a class="anchor" aria-label="anchor" href="#what-is-the-process"></a>
+</h3>
+<div class="callout-content">
+<p>CMS processes data in many steps (RECO, HLT, PAT, NANO…). These
+branches in NanoAOD are marking for the user which processing step
+produced the information seen in the NanoAOD file.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="l1-prefiring-corrections">L1 PreFiring corrections<a class="anchor" aria-label="anchor" href="#l1-prefiring-corrections"></a>
+<a class="anchor" aria-label="anchor" href="#l1-prefiring-corrections"></a>
+</h2>
+<hr class="half-width">
+<p>The 2016 NanoAOD files also contain a set of branches labeled
+“L1PreFiringWeight”. In 2016 and 2017, the gradual timing shift of the
+ECAL was not properly propagated to the L1 trigger system, resulting in
+a significant fraction of high-<span class="math inline">\(\eta\)</span>
+“trigger primitives” being mistakenly associated to the previous bunch
+crossing. Since Level-1 rules forbid two consecutive bunch crossings
+from firing, an unpleasant consequence of this is that events can
+effectively “self veto” if a significant amount of ECAL energy is found
+in the region <span class="math inline">\(2.0 &lt; |\eta| &lt;
+3.0\)</span>. The effect is strongly <span class="math inline">\(\eta\)</span>- and <span class="math inline">\(p_{T}\)</span>-dependent and prefiring rates can
+be large for high-momentum jets in the forward regions of the detector.
+A similar effect is present in the muon system, where the bunch crossing
+assignment of the muon candidates can be wrong due to the limited time
+resolution of the muon detectors. This effect was most pronounced in
+2016, and the magnitude varies between 0% and 3%.</p>
+<p>The L1PreFiring table in NanoAOD provides weights that analysts can
+apply to simulation to correct for these effects, so that simulation
+better represents data. The weights carry associated uncertainties,
+represented in alternate branches.</p>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="13%">
+<col width="36%">
+</colgroup>
+<thead><tr class="header">
+<th>Object property</th>
+<th>Type</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>L1PreFiringWeight_Dn</td>
+<td>Float_t</td>
+<td>L1 pre-firing event correction weight (1-probability), down
+var.</td>
+</tr>
+<tr class="even">
+<td>L1PreFiringWeight_ECAL_Dn</td>
+<td>Float_t</td>
+<td>ECAL L1 pre-firing event correction weight (1-probability), down
+var.</td>
+</tr>
+<tr class="odd">
+<td>L1PreFiringWeight_ECAL_Nom</td>
+<td>Float_t</td>
+<td>ECAL L1 pre-firing event correction weight (1-probability)</td>
+</tr>
+<tr class="even">
+<td>L1PreFiringWeight_ECAL_Up</td>
+<td>Float_t</td>
+<td>ECAL L1 pre-firing event correction weight (1-probability), up
+var.</td>
+</tr>
+<tr class="odd">
+<td>L1PreFiringWeight_Muon_Nom</td>
+<td>Float_t</td>
+<td>Muon L1 pre-firing event correction weight (1-probability)</td>
+</tr>
+<tr class="even">
+<td>L1PreFiringWeight_Muon_StatDn</td>
+<td>Float_t</td>
+<td>Muon L1 pre-firing event correction weight (1-probability), down
+var. stat.</td>
+</tr>
+<tr class="odd">
+<td>L1PreFiringWeight_Muon_StatUp</td>
+<td>Float_t</td>
+<td>Muon L1 pre-firing event correction weight (1-probability), up var.
+stat.</td>
+</tr>
+<tr class="even">
+<td>L1PreFiringWeight_Muon_SystDn</td>
+<td>Float_t</td>
+<td>Muon L1 pre-firing event correction weight (1-probability), down
+var. syst.</td>
+</tr>
+<tr class="odd">
+<td>L1PreFiringWeight_Muon_SystUp</td>
+<td>Float_t</td>
+<td>Muon L1 pre-firing event correction weight (1-probability), up var.
+syst.</td>
+</tr>
+<tr class="even">
+<td>L1PreFiringWeight_Nom</td>
+<td>Float_t</td>
+<td>L1 pre-firing event correction weight (1-probability)</td>
+</tr>
+<tr class="odd">
+<td>L1PreFiringWeight_Up</td>
+<td>Float_t</td>
+<td>L1 pre-firing event correction weight (1-probability), up var.</td>
+</tr>
+</tbody>
+</table></section><section><h2 class="section-heading" id="whats-missing-from-nanoaod">What’s missing from NanoAOD?<a class="anchor" aria-label="anchor" href="#whats-missing-from-nanoaod"></a>
+<a class="anchor" aria-label="anchor" href="#whats-missing-from-nanoaod"></a>
+</h2>
+<hr class="half-width">
+<p>NanoAOD does not contain information about trigger
+<strong>prescales</strong> or <strong>objects</strong>:</p>
+<ul>
+<li>The prescale is a “scale down factor” for triggers with rates too
+high to record all events</li>
+<li>A trigger object is a link to the electron, muon, jet, tau, etc,
+that specifically satisfied the criteria for a given trigger filter</li>
+</ul>
+<p>Prescale information is fixed in the “trigger menu”, so it can be
+accessed outside of NanoAOD. While it’s common for prescale values to
+change from run to run, most analysts are only interested in determining
+whether or not a trigger is prescaled at all. If not, that trigger is a
+good candidate for analyses requiring the full amount of data available.
+If so, the trigger is better suited to studies where statistics are not
+a limiting factor. Prescale values for any trigger can be accessed from
+the <code>brilcalc</code> tool that we will discuss in the upcoming
+episodes. We will practice finding a prescale value as an exercise.</p>
+<p>Trigger object information is important if an analysis needs to know
+which specific objects passed a certain set of trigger filters. So for
+instance, if you needed to know which tau leptons satisfied
+<code>LooseChargedIsoPFTauHPS20_Trk1_eta2p1_SingleL1</code> in order to
+make correct analysis choices, then you would need access to trigger
+object details. Many analyses do not require this level of detail, since
+physics objects can usually be selected using the identification and
+isolation algorithms designed to be applied separately from the trigger
+system. Trigger objects can be accessed in MiniAOD – follow our <a href="https://cms-opendata-workshop.github.io/workshop2023-lesson-selection/03-miniaodtrigger/index.html" class="external-link">trigger
+lesson for 2015 MiniAOD from 2023</a> to learn more.</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>NanoAOD stores basic pass/fail information for both L1 and HLT
+paths</li>
+<li>NanoAOD does not contain trigger prescale or trigger object
+information</li>
+<li>Trigger prescale information can be accessed from brilcalc</li>
+<li>Trigger object information must be accessed by processing MiniAOD
+files in CMSSW</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-04-lumi"><p>Content from <a href="04-lumi.html">Luminosity</a></p>
+<hr>
+<p>Last updated on 2024-07-18 |
+
+        <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/04-lumi.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What does “luminosity” mean in particle physics?</li>
+<li>How is luminosity measured in CMS?</li>
+<li>How is integrated luminosity calculated?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Understand the significance of luminosity to collider physics.</li>
+<li>Learn about the CMS luminometers.</li>
+<li>Learn the basic principles of computing luminosity values.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="luminosity-paper" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="luminosity-paper" class="callout-inner">
+<h3 class="callout-title">2016 luminosity paper<a class="anchor" aria-label="anchor" href="#luminosity-paper"></a>
+</h3>
+<div class="callout-content">
+<p>The information in this section is all from the <a href="https://arxiv.org/abs/2104.01927" class="external-link">2015-2016 luminosity paper by
+CMS</a>!</p>
+</div>
+</div>
+</div>
+<p>In collider physics, discovery potential can be summarized with two
+pieces of information:</p>
+<ul>
+<li>center-of-mass collision energy, <span class="math inline">\(\sqrt{s}\)</span>, that drives the range of
+produced particle masses, and</li>
+<li>luminosity, <span class="math inline">\(\mathcal{L}\)</span>, that
+drives the size of the accumulated dataset.</li>
+</ul>
+<p>Luminosity can be measured for small moments in time
+(<em>instantaneous luminosity</em>) or integrated over a full
+data-taking period (<em>integrated luminosity</em>). CMS and the LHC use
+instantaneous luminosity information to understand the collision
+environment during data-taking. The integrated luminosity value is used
+by all analysts to measure cross sections of a process being studied, or
+to determine the number of events expected for physics processes with
+well-known cross sections. Luminosity is the ratio of the production
+rate, <span class="math inline">\(R\)</span>, (or number of produced
+events, <span class="math inline">\(N\)</span>) and the “cross section”
+for the considered process:</p>
+<p><span class="math inline">\(\mathcal{L}(t) = R(t)/\sigma,\)</span>
+<span class="math inline">\(\mathcal{L}_{\mathrm{int.}} =
+N/\sigma.\)</span></p>
+<p>Cross section is measured in “barns”, a unit of area relevant for
+nuclear-scale processes. The most literal meaning of the word cross
+section would describe cutting a (spherical?) atomic nucleus in half
+through the middle, exposing a circular flat surface. As targets for
+projectiles in nuclear reactions, most atomic nuclei “look” fairly
+circular, and the circles would have areas on the order of 10-100 square
+femtometers. A “barn” is exactly 100 square femtometers, or <span class="math inline">\(1 \times 10^{-28}\)</span> square meters.
+Luminosity is therefore measured in the even stranger unit of inverse
+barns!</p>
+<p>Typical cross sections for particle physics interactions are much
+smaller than nuclear physics interactions, ranging from millibarns down
+to femtobarns. The integrated luminosities required to discover these
+interactions grows as the cross section shrinks.</p>
+<section><h2 class="section-heading" id="cms-luminometers">CMS Luminometers<a class="anchor" aria-label="anchor" href="#cms-luminometers"></a>
+<a class="anchor" aria-label="anchor" href="#cms-luminometers"></a>
+</h2>
+<hr class="half-width">
+<p>CMS has several subdetectors that serve as “luminometers”:</p>
+<ul>
+<li>Pixels: pixel tracking detector, which covers <span class="math inline">\(|\eta| &lt; 2.5\)</span>
+</li>
+<li>HF: forward hadron calorimeter, which covers <span class="math inline">\(3 &lt; |\eta| &lt; 5.2\)</span>
+</li>
+<li>PLT: pixel luminosity telescope, an array of 16 “telescopes” with
+pixel sensors in planes facing the interaction point.</li>
+<li>BCM1F: the fast beam conditions monitor, a system of diamond sensors
+on the PLT apparatus.</li>
+</ul>
+<p>![]{fig/luminometers.PNG}</p>
+<p>The pixel detector contributes two measurements that are used for
+luminosity calculations: the number of charge clusters observed, and the
+number of vertices found with more than 10 tracks. The number of
+clusters can be used to compute the cross section for producing “visible
+particles”. It is vanishingly unlikely that particles overlap each other
+in the pixel detector, so the average number of clusters in the pixel
+detector tracks directly with the number of simultaneous collisions in
+CMS. The visible cross section is the slope, or ratio, of this
+relationship.</p>
+<p>In the HF, a suite of FPGA readout electronics processes data at the
+full 40 MHz LHC collision rate. The record the number of channels in
+which above-threshold charge was deposited during the bunch crossing.
+The PLT looks for tracks from the collision point that hit all three
+sensors in one of the telescopes – the fraction of events with no PLT
+coincidences can be used in the luminosity calculation. The BCM1F has
+readout that is optimized for time precision. This subdetector has a
+time resolution of just over 6 ns, so it can separate collision hits
+from beam-related background hits. The data from all of these
+luminometers can be used to converge on a precise, stable determination
+of the luminosity in CMS.</p>
+</section><section><h2 class="section-heading" id="luminosity-calculation-and-calibration">Luminosity calculation and calibration<a class="anchor" aria-label="anchor" href="#luminosity-calculation-and-calibration"></a>
+<a class="anchor" aria-label="anchor" href="#luminosity-calculation-and-calibration"></a>
+</h2>
+<hr class="half-width">
+<p>The true mean number of interations per LHC bunch crossing, <span class="math inline">\(\mu\)</span>, is proportional to the instantaneous
+luminosity of the bunch crossing:</p>
+<p><span class="math inline">\(\mu = \sigma \mathcal{L}_b /
+v_r\)</span>, where <span class="math inline">\(v_r = 11 245.6\)</span>
+Hz is the revolution frequency of the LHC, and <span class="math inline">\(\sigma\)</span> is the total interaction cross
+section.</p>
+<p>In the pixel detector, <span class="math inline">\(\mathcal{L}_b\)</span> can be estimated from this
+formula by considering the average number of clusters and the visible
+cross section obtained by comparing the number of clusters to number of
+interactions. This algorithm is known as “rate scaling”:</p>
+<p><span class="math inline">\(\mathcal{L}_b = N_{\mathrm{av}} v_r /
+\sigma_{\mathrm{vis}}.\)</span></p>
+<p>For the HF, PLT, and BCM1F luminometers, the “zero counting” method
+gives a better luminosity estimate, since these detectors are more
+likely than the pixel detectors to have multiple signals overlap and be
+counted as one observation. The number of interactions per bunch
+crossing is governed by the Poisson distribution, so if there is a
+probability <span class="math inline">\(p\)</span> for an interaction
+result in 0 observations in a luminometer and <span class="math inline">\(k\)</span> interactions in a given bunch crossing,
+the expected fraction of “empty” events (<span class="math inline">\(\langle f_0 \rangle\)</span>) can be written as
+the sum of the Poisson distribution times the total probability for all
+possible values of <span class="math inline">\(k\)</span>:</p>
+<p><span class="math inline">\(\langle f_0 \rangle = \sum_{k =
+0}^{\infty}{\frac{e^{-\mu} \mu^k}{k!} p^k} = e^{-\mu(1-p)}\)</span>.</p>
+<p>The true mean number of interactions per bunch cross can be extracted
+from this formula and related to the instantaneous luminosity per bunch
+crossing:</p>
+<p><span class="math inline">\(\mathcal{L}_b = \frac{-\ln\langle f_0
+\rangle}{1-p} \frac{v_r}{\sigma}.\)</span></p>
+<p>We can measure the <em>visible</em> cross section, <span class="math inline">\(\sigma_{\mathrm{vis}}\)</span>, from the pixel
+detector, which is effectively <span class="math inline">\((1-p)\sigma\)</span>, since <span class="math inline">\(1-p\)</span> is the probability for an interaction
+to produce hits in a luminometer. The luminosity from the zero-counting
+method is then:</p>
+<p><span class="math inline">\(\mathcal{L}_b = -\ln\langle f_0 \rangle
+v_r/\sigma_{\mathrm{vis}}\)</span>.</p>
+<p>The two methods produce very similar formulas based on different
+observables. After computing the per-bunch-crossing luminosity with
+these methods, a wide array of calibration methods are employed to
+ensure the precision and accuracy of the result. Beam-separation scans,
+information from independent detectors such as the muon drift tubes,
+beam position and current monitoring data, and more are used to compute
+corrections and uncertainties in the luminosity measurement.</p>
+<p>For 2016, the total integrated luminosity is 36.3 fb<span class="math inline">\(^{-1}\)</span>, with an uncertainty of 1.2%. The
+paper notes that, “The final precision is among the best achieved at
+bunched-beam hadron colliders” – a great achievement!</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Luminosity is a measure of the number of collisions occuring in
+CMS.</li>
+<li>Luminosity is measured in various subdetectors: the pixel tracker,
+the HF, the PLT, and the BCM1F.</li>
+<li>After careful calibration, the 2016 luminosity uncertainty is only
+1.2%.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-05-challenge"><p>Content from <a href="05-challenge.html">Trigger &amp; Lumi challenge</a></p>
+<hr>
+<p>Last updated on 2024-07-18 |
+
+        <a href="https://github.com/cms-opendata-workshop/workbench-template-md/edit/main/episodes/05-challenge.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Which triggers are likely the most useful for selecting top quark
+events?</li>
+<li>What are the prescale values of some possible triggers?</li>
+<li>What is the luminosity collected by my chosen trigger?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Learn to make trigger choices based on analysis goals, expected
+physics objects, and available trigger paths.</li>
+<li>Practice using brilcalc to extract trigger prescale information</li>
+<li>Practice using brilcalc to compute integrated luminosity</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="workshop-analysis-example-z-rightarrow-tbart-rightarrow-bjjbellnu" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="workshop-analysis-example-z-rightarrow-tbart-rightarrow-bjjbellnu" class="callout-inner">
+<h3 class="callout-title">Workshop analysis example: <span class="math inline">\(Z' \rightarrow t\bar{t} \rightarrow
+(bjj)(b\ell\nu)\)</span><a class="anchor" aria-label="anchor" href="#workshop-analysis-example-z-rightarrow-tbart-rightarrow-bjjbellnu"></a>
+</h3>
+<div class="callout-content">
+<p>Later in the workshop we will search for a Z’ boson that decays to a
+top quark-antiquark pair. The signal for this measurement is one top
+quark that decays hadronically, and one top quark that decays
+leptonically, to either a muon or an electron. For Z’ bosons with mass
+in the 1 - 5 TeV range, the top quarks should both be produced with high
+momentum.</p>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="choosing-a-trigger-path">Choosing a trigger path<a class="anchor" aria-label="anchor" href="#choosing-a-trigger-path"></a>
+<a class="anchor" aria-label="anchor" href="#choosing-a-trigger-path"></a>
+</h2>
+<hr class="half-width">
+<p>Using what you have learned about CMS physics objects and triggers,
+let’s sketch out some ideas for potential trigger selections. To begin
+with:</p>
+<p><strong>Which final state particles would you expect to observe in
+the detector from your “signal” process?</strong></p>
+<p>Based on these particles, consider: * Which physics objects could
+appear in a useful trigger path? At a hadron collider, which physics
+objects might be <em>best</em> for triggering? * What kinematic
+conditions do you expect for the trigger physics objects? * We saw
+trigger “trade-offs”, like requiring isolated particles in exchange for
+lower momenta – would that trade-off be beneficial in this case?</p>
+<div id="physics-exercise-choose-trigger-paths" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?<a class="anchor" aria-label="anchor" href="#challenge-1-can-you-do-it"></a>
+<div id="physics-exercise-choose-trigger-paths" class="callout-inner">
+<h3 class="callout-title">Physics exercise: choose trigger paths<a class="anchor" aria-label="anchor" href="#physics-exercise-choose-trigger-paths"></a>
 </h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>Visit the NanoAOD <a href="https://opendata.cern.ch/eos/opendata/cms/dataset-semantics/NanoAODSIM/75156/ZprimeToTT_M2000_W20_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8_doc.html#HLT" class="external-link">HLT
+branch listing for our signal sample</a> and choose 3-4 trigger options
+that might be effective for selecting <span class="math inline">\(Z'
+\rightarrow t\bar{t}\)</span> events</p>
 </div>
 </div>
 </div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<p>For the <span class="math inline">\(t\bar{t}\)</span> final state we
+will consider, we expect one electron or muon, MET from the accompanying
+neutrino, and several jets, some of which could be tagged as b quark
+jets. There might even be “fat jets” tagged as entire top quark decays.
+This analysis is perfect for the common “single lepton” triggers. Since
+the top quarks will be produced with high momentum, the lepton might not
+be well separated from a b quark jet, so it would be wisest to include a
+non-isolated trigger. Since the signal will likely produce high-pT
+leptons, we can afford to use triggers that require higher momentum in
+order to relax isolation requirements.</p>
+<p>The triggers used in the CMS analysis that we are mimicking were:</p>
+<ul>
+<li>HLT_Mu50</li>
+<li>HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165</li>
+<li>HLT_Ele115_CaloIdVT_GsfTrkIdT</li>
+</ul>
+<p>For any of these triggers, the leptons (and jet, if applicable)
+should ideally be selected using criteria that put them in the
+“efficiency plateau” of the trigger. For example, the HLT_Mu50 trigger
+is designed to select muons with at least 50 GeV of transverse momentum,
+but if you plotted the number of muons selected as a function of pT, you
+would certainly not see a vertical line step function with 0 muons
+selected below 50 GeV and 100% of muons selected above 50 GeV. Right in
+the region of the threshold there will be a “turn-on” effect where the
+efficiency rises quickly, but not exactly following a step function.
+This turn-on can be difficult to model well in simulation, so many
+analysts choose selection criteria for physics objects that will not be
+subject to the turn-on effects of the trigger. For example, in an
+analysis using HLT_Mu50, the muon selection criteria would typically be
+pT &gt; 55 GeV.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="brilcalc-exercises">Brilcalc exercises<a class="anchor" aria-label="anchor" href="#brilcalc-exercises"></a>
+<a class="anchor" aria-label="anchor" href="#brilcalc-exercises"></a>
+</h2>
+<hr class="half-width">
+<div id="prereq1" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Prerequisite<a class="anchor" aria-label="anchor" href="#prereq1"></a>
 </h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<div class="callout-content">
+<p>These exercises will be performed using the <code>brilws</code>
+container that you installed at the beginning of the lesson. If you have
+exited that container, restart it:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">docker</span> start <span class="at">-i</span> brilws</span></code></pre>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div id="exercise-1-test-brilcalc" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?<a class="anchor" aria-label="anchor" href="#challenge-2-how-do-you-nest-solutions-within-challenge-blocks"></a>
+<div id="exercise-1-test-brilcalc" class="callout-inner">
+<h3 class="callout-title">Exercise 1: test brilcalc<a class="anchor" aria-label="anchor" href="#exercise-1-test-brilcalc"></a>
 </h3>
 <div class="callout-content">
-
+<p>As a test, let’s see what the integrated luminosity was for run
+284044 by running the command:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">brilcalc</span> lumi <span class="at">-c</span> web <span class="at">-r</span> 284044</span></code></pre>
+</div>
+<p>Note: It is important that you use the <code>-c web</code> option
+when running brilcalc. This specifies that you use indirect access to
+BRIL servers via a web cache. For users of CMS open data outside CERN
+and CMS this is the only option that will work.</p>
 </div>
 </div>
 </div>
@@ -418,45 +1530,289 @@ reinforce the objectives.</li>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<p>You should see the following output:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>#Data tag : 24v1 , Norm tag: onlineresult
++-------------+-------------------+-----+------+-------------------+-------------------+
+| run:fill    | time              | nls | ncms | delivered(/ub)    | recorded(/ub)     |
++-------------+-------------------+-----+------+-------------------+-------------------+
+| 284044:5451 | 10/26/16 20:46:05 | 594 | 40   | 5450634.956154574 | 4912825.742705812 |
++-------------+-------------------+-----+------+-------------------+-------------------+
+#Summary:
++-------+------+-----+------+-------------------+-------------------+
+| nfill | nrun | nls | ncms | totdelivered(/ub) | totrecorded(/ub)  |
++-------+------+-----+------+-------------------+-------------------+
+| 1     | 1    | 594 | 40   | 5450634.956154574 | 4912825.742705812 |
++-------+------+-----+------+-------------------+-------------------+</code></pre>
 </div>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+</div>
+<div id="exercise-2-2016-validated-runs-luminosity-sections" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
+<div id="exercise-2-2016-validated-runs-luminosity-sections" class="callout-inner">
+<h3 class="callout-title">Exercise 2: 2016 validated runs &amp; luminosity sections<a class="anchor" aria-label="anchor" href="#exercise-2-2016-validated-runs-luminosity-sections"></a>
 </h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>All CMS data is studied by data quality monitoring groups for various
+subdetectors to determine whether it is suitable for physics analysis.
+Data can be accepted or rejected in units of “luminosity sections”.
+These are periods of time covering <span class="math inline">\(2^{18}\)</span> LHC revolutions, or about 23
+seconds. The list of validated runs and luminosity sections is stored in
+a <code>json</code> file that can be downloaded from the Open Data
+Portal.</p>
+<p>First, obtain the file with the list of validated runs and luminosity
+sections for 2016 data:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">wget</span> https://opendata.cern.ch/record/14220/files/Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt</span></code></pre>
+</div>
+<p>Use <code>brilcalc</code> to display the luminosity for each valid
+run in the 2016 Open Data. Currently, we have released 2016G and 2016H
+data, which contain runs 278820 through 284044.</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="ex">brilcalc</span> lumi <span class="at">-c</span> web <span class="at">-b</span> <span class="st">"STABLE BEAMS"</span> <span class="at">--begin</span> 278820 <span class="at">--end</span> 284044 <span class="at">-i</span> Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt <span class="op">&gt;</span> 2016GHlumi.txt</span></code></pre>
+</div>
+<ul>
+<li>Can you identify the run in this range that had the most luminosity
+sections?</li>
+<li>What is the total recorded luminosity for this run range?</li>
+</ul>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>You can investigate the output file best using <code>head</code>:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">head</span> <span class="at">-165</span> 2016GHlumi.txt</span></code></pre>
+</div>
+<p>The longest run is 279931!</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>#Data tag : 24v1 , Norm tag: onlineresult
++-------------+-------------------+------+------+---------------------+---------------------+
+| run:fill    | time              | nls  | ncms | delivered(/ub)      | recorded(/ub)       |
++-------------+-------------------+------+------+---------------------+---------------------+
+| 278820:5199 | 08/14/16 11:00:52 | 1524 | 1524 | 300457014.643834889 | 287580217.903829336 |
+| 278822:5199 | 08/14/16 21:52:48 | 1627 | 1627 | 195829703.718308955 | 189724216.323258847 |
+| 278873:5205 | 08/15/16 23:25:46 | 67   | 60   | 12468667.004980152  | 2012170.733444575   |
+| 278874:5205 | 08/15/16 23:51:54 | 484  | 484  | 88533994.547763854  | 82142606.203014016  |
+| 278875:5205 | 08/16/16 03:01:21 | 834  | 834  | 120598272.705723718 | 115092509.056569114 |
+| 278923:5206 | 08/16/16 12:16:33 | 413  | 413  | 103255455.458636224 | 98881486.964829206  |
+...
+| 279887:5270 | 09/01/16 23:20:53 | 319  | 319  | 76790312.907530844  | 72932440.002667427  |
+| 279931:5274 | 09/02/16 11:37:40 | 2936 | 2936 | 485408960.517024338 | 470459175.415192366 |
+| 279966:5275 | 09/03/16 09:20:25 | 363  | 363  | 95862775.891636893  | 91937407.130460218  |
+| 279975:5276 | 09/03/16 14:45:09 | 1024 | 1024 | 244951346.260912448 | 235979324.421879977 |</code></pre>
+</div>
+<p>The units are inverse microbarns as default and can be changed to
+inverse femtobarns with the option <code>-u /fb</code>.</p>
+<p>The total recorded luminosity for the run range is listed in the
+summary below the individual runs:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">head</span> <span class="at">-168</span> 2016GHlumi.txt</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>#Summary:
++-------+------+-------+-------+-----------------------+-----------------------+
+| nfill | nrun | nls   | ncms  | totdelivered(/ub)     | totrecorded(/ub)      |
++-------+------+-------+-------+-----------------------+-----------------------+
+| 64    | 156  | 90807 | 90526 | 17062540322.934297562 | 16290713419.734096527 |
++-------+------+-------+-------+-----------------------+-----------------------+</code></pre>
+</div>
+<p>CMS recorded 16.3 inverse femtobarns of proton-proton collisions in
+2016 G and H!</p>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-3-selecting-the-best-luminometer" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-3-selecting-the-best-luminometer" class="callout-inner">
+<h3 class="callout-title">Exercise 3: selecting the best luminometer<a class="anchor" aria-label="anchor" href="#exercise-3-selecting-the-best-luminometer"></a>
+</h3>
+<div class="callout-content">
+<p>Update to</p>
+<p>For Run-2 data, the luminometer giving the best value for each
+luminosity section is recorded in a ‘normtag’ file, provided in the <a href="https://opendata.cern.ch/record/1059" class="external-link">2016 luminosity information
+record</a> (‘normtag_PHYSICS_pp_2016.json’). Use it with the
+corresponding list of validated runs from 2016 to find the best estimate
+of the 2016G-H luminosity.</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">wget</span> https://opendata.cern.ch/record/1059/files/normtag_PHYSICS_pp_2016.json</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="ex">brilcalc</span> lumi <span class="at">-c</span> web <span class="at">-b</span> <span class="st">"STABLE BEAMS"</span> <span class="at">--begin</span> 278820 <span class="at">--end</span> 284044 <span class="at">-i</span> Cert_271036-284044_13TeV_Legacy2016_Collisions16_JSON.txt <span class="at">-u</span> /fb <span class="at">--normtag</span> normtag_PHYSICS_pp_2016.json <span class="op">&gt;</span> 2016GHlumi_normtag.txt</span></code></pre>
+</div>
+<p>Does it change compared to the previous exercise?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<p>The summary should now read:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>#Summary:
++-------+------+-------+-------+-------------------+------------------+
+| nfill | nrun | nls   | ncms  | totdelivered(/fb) | totrecorded(/fb) |
++-------+------+-------+-------+-------------------+------------------+
+| 64    | 156  | 90807 | 90526 | 17.168970230      | 16.393380532     |
++-------+------+-------+-------+-------------------+------------------+</code></pre>
+</div>
+<p>To three significant figures, the luminosity is better reported as
+16.4 inverse femtobarns.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Luminosity and prescale values for an HLT trigger path<a class="anchor" aria-label="anchor" href="#exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path"></a>
+</h3>
+<div class="callout-content">
+<p>One of the triggers that is a good candidate for the Z’ search
+example is <code>HLT_Mu50</code>. Let’s calculate the integrated
+luminosity covered by this trigger for the long run 279931:</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">brilcalc</span> lumi <span class="at">-c</span> web <span class="at">-b</span> <span class="st">"STABLE BEAMS"</span> <span class="at">-r</span> 279931 <span class="at">--hltpath</span><span class="op">=</span><span class="st">"HLT_Mu50*"</span></span></code></pre>
+</div>
+<p>Compare this luminosity to the similar trigger <code>HLT_Mu27</code>
+– what difference do you observe? What is happening to Mu27 that is not
+occurring for Mu50?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<p>In run 279931, the luminosity collected with Mu50* is:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>+-------------+-------------------+------+-----------------------------+---------------------+---------------------+
+| run:fill    | time              | ncms | hltpath                     | delivered(/ub)      | recorded(/ub)       |
++-------------+-------------------+------+-----------------------------+---------------------+---------------------+
+| 279931:5274 | 09/02/16 11:36:53 | 2945 | HLT_Mu50_IsoVVVL_PFHT400_v3 | 486636050.343178093 | 471451252.657074332 |
+| 279931:5274 | 09/02/16 11:36:53 | 2945 | HLT_Mu50_v4                 | 486636050.343178093 | 471451252.657074332 |
++-------------+-------------------+------+-----------------------------+---------------------+---------------------+</code></pre>
+</div>
+<p>The luminosity collected with Mu27* is:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>+-------------+-------------------+------+--------------------------------------+---------------------+---------------------+
+| run:fill    | time              | ncms | hltpath                              | delivered(/ub)      | recorded(/ub)       |
++-------------+-------------------+------+--------------------------------------+---------------------+---------------------+
+| 279931:5274 | 09/02/16 11:36:53 | 2945 | HLT_Mu27_Ele37_CaloIdL_GsfTrkIdVL_v4 | 486636050.343178093 | 471451252.657074332 |
+| 279931:5274 | 09/02/16 11:36:53 | 2945 | HLT_Mu27_TkMu8_v3                    | 334796076.249607444 | 325826000.870547831 |
+| 279931:5274 | 09/02/16 11:36:53 | 2945 | HLT_Mu27_v4                          | 3373601.765050163   | 3273957.230715709   |
++-------------+-------------------+------+--------------------------------------+---------------------+---------------------+</code></pre>
+</div>
+<p>The Mu27 trigger is significantly prescaled!</p>
+<p>Note: you could combine the example in this exercise with the
+brilcalc options <code>--begin</code>, <code>--end</code>,
+<code>-i</code>, and <code>--normtag</code> to confirm the total
+integrated luminosity for a given trigger path. This command can take a
+while! If you wish to use wildcards to get results for many trigger
+paths, you can consider adding <code>--output-style csv</code> and
+redirecting the results to a .csv file for easier analysis.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout-inner">
+<h3 class="callout-title">Exercise 4: Luminosity and prescale values for
+an HLT trigger path<em> (continued)</em><a class="anchor" aria-label="anchor" href="#exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path"></a>
+</h3>
+<div class="callout-content">
+<p>More trigger information for these muon triggers can be seen using
+<code>brilcalc trg</code> with the <code>--prescale</code> option:</p>
+<div class="codewrapper sourceCode" id="cb15">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">brilcalc</span> trg <span class="at">--prescale</span> <span class="at">-c</span> web <span class="at">-r</span> 279931 <span class="at">--hltpath</span> <span class="st">"HLT_Mu27*"</span></span></code></pre>
+</div>
+<p>What are the prescale values for this trigger?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>+--------+-------+----------+-------------+--------------------+-------+---------------------------------------+
+| run    | cmsls | prescidx | totprescval | hltpath/prescval   | logic | l1bit/prescval                        |
++--------+-------+----------+-------------+--------------------+-------+---------------------------------------+
+| 279931 | 1     | 2        | 260.00      | HLT_Mu27_v4/260    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 71    | 6        | 140.00      | HLT_Mu27_v4/140    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 74    | 2        | 260.00      | HLT_Mu27_v4/260    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 262   | 3        | 230.00      | HLT_Mu27_v4/230    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 521   | 4        | 200.00      | HLT_Mu27_v4/200    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 752   | 5        | 160.00      | HLT_Mu27_v4/160    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 1088  | 6        | 140.00      | HLT_Mu27_v4/140    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |
+| 279931 | 1946  | 7        | 100.00      | HLT_Mu27_v4/100    | OR    | L1_SingleMu22/1.00 L1_SingleMu25/1.00 |</code></pre>
+</div>
+<p>The total prescale value is the product of any prescale applied at L1
+with any prescale applied at HLT. As this long run proceeded, the
+prescale values changed several times. During a portion of the run this
+trigger was not allowed to collect any luminosity, and in other portions
+it was scaled down by at least a factor of 100. In contrast, you can
+confirm that Mu50 always has a prescale of 1. Any wildcard can be given
+in the <code>--hltpath</code> option to compare many triggers for a
+certain physics object and find unprescaled options.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -466,14 +1822,13 @@ this:</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Triggers need to be chosen with the event topology of the analysis
+in mind! They place constraints on your choices for selecting physics
+objects in an analysis.</li>
+<li>The brilcalc tools allows you to calculate luminosity for a run, a
+range of runs, or a trigger path.</li>
+<li>The brilcalc tool can also share information about trigger prescales
+throughout a run.</li>
 </ul>
 </div>
 </div>
@@ -529,7 +1884,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://cms-opendata-workshop.github.io/workbench-template-md/aio.html",
   "identifier": "https://cms-opendata-workshop.github.io/workbench-template-md/aio.html",
-  "dateCreated": "2024-07-18",
+  "dateCreated": "2024-07-29",
   "dateModified": "2024-07-18",
   "datePublished": "2024-07-18"
 }
