@@ -1230,8 +1230,9 @@ well-known cross sections. Luminosity is the ratio of the production
 rate, <span class="math inline">\(R\)</span>, (or number of produced
 events, <span class="math inline">\(N\)</span>) and the “cross section”
 for the considered process:</p>
-<p><span class="math inline">\(\mathcal{L}(t) = R(t)/\sigma,\)</span>
-<span class="math inline">\(\mathcal{L}_{\mathrm{int.}} =
+<p><span class="math inline">\(\mathcal{L}(t) =
+R(t)/\sigma,\)</span></p>
+<p><span class="math inline">\(\mathcal{L}_{\mathrm{int.}} =
 N/\sigma.\)</span></p>
 <p>Cross section is measured in “barns”, a unit of area relevant for
 nuclear-scale processes. The most literal meaning of the word cross
@@ -1261,8 +1262,7 @@ pixel sensors in planes facing the interaction point.</li>
 <li>BCM1F: the fast beam conditions monitor, a system of diamond sensors
 on the PLT apparatus.</li>
 </ul>
-<p>![]{fig/luminometers.PNG}</p>
-<p>The pixel detector contributes two measurements that are used for
+<figure><img src="../fig/luminometers.PNG" class="figure mx-auto d-block"></figure><p>The pixel detector contributes two measurements that are used for
 luminosity calculations: the number of charge clusters observed, and the
 number of vertices found with more than 10 tracks. The number of
 clusters can be used to compute the cross section for producing “visible
@@ -1289,8 +1289,9 @@ of the luminosity in CMS.</p>
 <p>The true mean number of interations per LHC bunch crossing, <span class="math inline">\(\mu\)</span>, is proportional to the instantaneous
 luminosity of the bunch crossing:</p>
 <p><span class="math inline">\(\mu = \sigma \mathcal{L}_b /
-v_r\)</span>, where <span class="math inline">\(v_r = 11 245.6\)</span>
-Hz is the revolution frequency of the LHC, and <span class="math inline">\(\sigma\)</span> is the total interaction cross
+v_r\)</span>,</p>
+<p>where <span class="math inline">\(v_r = 11 245.6\)</span> Hz is the
+revolution frequency of the LHC, and <span class="math inline">\(\sigma\)</span> is the total interaction cross
 section.</p>
 <p>In the pixel detector, <span class="math inline">\(\mathcal{L}_b\)</span> can be estimated from this
 formula by considering the average number of clusters and the visible
@@ -1305,7 +1306,7 @@ counted as one observation. The number of interactions per bunch
 crossing is governed by the Poisson distribution, so if there is a
 probability <span class="math inline">\(p\)</span> for an interaction
 result in 0 observations in a luminometer and <span class="math inline">\(k\)</span> interactions in a given bunch crossing,
-the expected fraction of “empty” events (<span class="math inline">\(\langle f_0 \rangle\)</span>) can be written as
+the expected fraction of “empty” events, <span class="math inline">\(\langle f_0 \rangle\)</span>, can be written as
 the sum of the Poisson distribution times the total probability for all
 possible values of <span class="math inline">\(k\)</span>:</p>
 <p><span class="math inline">\(\langle f_0 \rangle = \sum_{k =
@@ -1421,12 +1422,17 @@ let’s sketch out some ideas for potential trigger selections. To begin
 with:</p>
 <p><strong>Which final state particles would you expect to observe in
 the detector from your “signal” process?</strong></p>
-<p>Based on these particles, consider: * Which physics objects could
-appear in a useful trigger path? At a hadron collider, which physics
-objects might be <em>best</em> for triggering? * What kinematic
-conditions do you expect for the trigger physics objects? * We saw
-trigger “trade-offs”, like requiring isolated particles in exchange for
-lower momenta – would that trade-off be beneficial in this case?</p>
+<p>Based on these particles, consider:</p>
+<ul>
+<li>Which physics objects could appear in a useful trigger path? At a
+hadron collider, which physics objects might be <em>best</em> for
+triggering?</li>
+<li>What kinematic conditions do you expect for the trigger physics
+objects?</li>
+<li>We saw trigger “trade-offs”, like requiring isolated particles in
+exchange for lower momenta – would that trade-off be beneficial in this
+case?</li>
+</ul>
 <div id="physics-exercise-choose-trigger-paths" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1447,7 +1453,7 @@ that might be effective for selecting <span class="math inline">\(Z'
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>For the <span class="math inline">\(t\bar{t}\)</span> final state we
 will consider, we expect one electron or muon, MET from the accompanying
@@ -1533,7 +1539,7 @@ and CMS this is the only option that will work.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You should see the following output:</p>
 <div class="codewrapper">
@@ -1599,7 +1605,7 @@ sections?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>You can investigate the output file best using <code>head</code>:</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -1681,7 +1687,7 @@ of the 2016G-H luminosity.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>The summary should now read:</p>
 <div class="codewrapper">
@@ -1727,7 +1733,7 @@ occurring for Mu50?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>In run 279931, the luminosity collected with Mu50* is:</p>
 <div class="codewrapper">
@@ -1764,13 +1770,12 @@ redirecting the results to a .csv file for easier analysis.</p>
 </div>
 </div>
 </div>
-<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout challenge">
+<div id="exercise-5-extracting-trigger-details" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path" class="callout-inner">
-<h3 class="callout-title">Exercise 4: Luminosity and prescale values for
-an HLT trigger path<em> (continued)</em><a class="anchor" aria-label="anchor" href="#exercise-4-luminosity-and-prescale-values-for-an-hlt-trigger-path"></a>
+<div id="exercise-5-extracting-trigger-details" class="callout-inner">
+<h3 class="callout-title">Exercise 5: extracting trigger details<a class="anchor" aria-label="anchor" href="#exercise-5-extracting-trigger-details"></a>
 </h3>
 <div class="callout-content">
 <p>More trigger information for these muon triggers can be seen using
@@ -1789,7 +1794,7 @@ an HLT trigger path<em> (continued)</em><a class="anchor" aria-label="anchor" hr
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
