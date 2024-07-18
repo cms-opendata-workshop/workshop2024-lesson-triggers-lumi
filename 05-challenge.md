@@ -35,6 +35,7 @@ Using what you have learned about CMS physics objects and triggers, let's sketch
 **Which final state particles would you expect to observe in the detector from your "signal" process?**
 
 Based on these particles, consider:
+
  * Which physics objects could appear in a useful trigger path? At a hadron collider, which physics objects might be *best* for triggering?
  * What kinematic conditions do you expect for the trigger physics objects?
  * We saw trigger "trade-offs", like requiring isolated particles in exchange for lower momenta -- would that trade-off be beneficial in this case?
@@ -260,6 +261,12 @@ The Mu27 trigger is significantly prescaled!
 Note: you could combine the example in this exercise with the brilcalc options `--begin`, `--end`, `-i`, and `--normtag` to confirm the total integrated luminosity for a given trigger path. This command can take a while! If you wish to use wildcards to get results for many trigger paths, you can consider adding `--output-style csv` and redirecting the results to a .csv file for easier analysis.
 
 :::::::
+
+:::::::::::::::::::
+
+::::::::::::::::::: challenge
+
+## Exercise 5: extracting trigger details
 
 More trigger information for these muon triggers can be seen using `brilcalc trg` with the `--prescale` option:
 
